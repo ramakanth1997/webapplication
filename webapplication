@@ -1,3 +1,7 @@
+pip install --upgrade streamlit
+
+
+
 # -*- coding: utf-8 -*-
 
 #import libraries
