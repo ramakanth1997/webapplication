@@ -126,7 +126,7 @@ if senza_auth==True:
 
     # ---- SIDEBAR ----
     #authenticator.logout("Logout", "sidebar")
-    st.sidebar.title("Welcome 👋")
+    st.sidebar.title("Hello Everyone 👋")
     
     def form_pazienti():
         
@@ -267,7 +267,7 @@ if senza_auth==True:
                 var_c1 = cols2[0].slider("Quanto è soddisfatto dell'accoglienza del nostro reparto?", 1, 7, 1)
                 var_c2 = cols2[1].slider("Quanto è soddisfatto del tempo che ha dovuto attendere per essere aiutato alla reception?", 1, 7, 1)
                 
-            #PROCEDURA
+            #PROCEDURE
             st.info("➡️ 3. Sulla procedura che le è stata prescritta")
             cols3 = st.columns((1, 1, 1))
             var_d1 = cols3[0].selectbox("A quale procedura di imaging medico si è sottoposto?", ["RMN", "CT", "Ultrasuoni", "Raggi X", "Mammografia", "Artrografia/Mielografia", "Interventi/Biopsie", "Altro"])
