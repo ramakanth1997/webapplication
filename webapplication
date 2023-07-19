@@ -31,10 +31,10 @@ img2 = Image.open('images/med_bot.png')
 SCOPE = "https://www.googleapis.com/auth/spreadsheets"
 SPREADSHEET_ID = "1OBEMIUloci4WV80D-yLhhoLMVQymy-TYlh7jwGXmND8"
 SHEET_NAME = "Database"
-GSHEET_URL = f"https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}"
+GSHEET_URL = f"https://docs.google.com/spreadsheets/d/1VVIRtGEiwzBLLAb0T44mdzWg23zIEz3rTRPwy69d-DU/edit#gid=0"
 
 # impostazione grafica iniziale
-st.set_page_config(page_title="MeHEDI", page_icon="🏥", layout="wide")
+st.set_page_config(page_title="BLR", page_icon="🏥", layout="wide")
 
 @st.cache_resource()
 def connect_to_gsheet():
@@ -97,7 +97,7 @@ def add_row_to_gsheet(gsheet_connector, row) -> None:
 #hashed_passwords = [user["password"] for user in users]
 
 #authenticator = stauth.Authenticate(names, usernames, hashed_passwords, 'some_cookie_name','some_signature_key',cookie_expiry_days=30)
-#name, authentication_status, username = authenticator.login("Login - Web application MEHEDI Patient's satisfaction", "main")
+#name, authentication_status, username = authenticator.login("Login - Web application BLR Patient's satisfaction", "main")
 
 #if st.session_state["authentication_status"] == False:
 #    st.error("Username/password is incorrect")
@@ -164,7 +164,7 @@ if senza_auth==True:
         </style>
         '''
         st.markdown(hide_img_fs, unsafe_allow_html=True)
-        #t1.markdown("### This section shows some information about MeHEDI - Tool of Patient Satisfaction")
+        #t1.markdown("### This section shows some information about BLR - Tool of Patient Satisfaction")
         t2.write("")
 
         reduce_header_height_style = """
@@ -215,7 +215,7 @@ if senza_auth==True:
             with st.expander("ℹ️ Istruzioni generali compilazione form", expanded=False):
                 st.markdown(
                     """
-                    ### Framework Return on Experience of MeHEDI
+                    ### Framework Return on Experience of BLR
                     Questo framework serve alla struttura sanitaria per raccogliere il feedback riguardo i servizi erogati ai suoi pazienti. Per qualsiasi problematica alla fine della compilazione del form sarà possibile contattare la struttura tramite e-mail.
                     """
                 )
